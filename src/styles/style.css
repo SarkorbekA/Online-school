@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Sevillana&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body.actice {
+  overflow: hidden;
+}
+
+.filter.active {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 0px 15px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background: white;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .nav__ul {
+  background: rgba(0, 0, 0, 0.9);
+  gap: 18px;
+  position: absolute;
+  z-index: 11;
+  left: -100%;
+  padding: 15px;
+  top: 0;
+  width: 20vw;
+  height: 100vh;
+  transition: 2s;
+}
+nav .nav__ul .items {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav .nav__ul a {
+  width: 100px;
+  display: inline-block;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 8px 0px;
+}
+nav .nav__ul a:hover {
+  transition: 0.2s;
+  color: gray;
+}
+nav .nav__ul.active {
+  left: 0;
+  transition: 0.8s;
+}
+
+.button__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.button__box .my-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button__box .my-button .btn-elem {
+  position: relative;
+  width: 30px;
+  height: 4px;
+  background: #000;
+}
+.button__box .my-button .btn-elem::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 4px;
+  top: -11px;
+  background: #000;
+}
+.button__box .my-button .btn-elem::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 4px;
+  top: 11px;
+  background: #000;
+}
+
+.button__box:hover .btn-elem {
+  transition: 0.2s;
+  background: #ff7c87;
+}
+
+.button__box:hover .btn-elem::before {
+  transition: 0.2s;
+  background: #ff7c87;
+}
+
+.button__box:hover .btn-elem::after {
+  transition: 0.2s;
+  background: #ff7c87;
+}
+
+.exit {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+}
+.exit .my-button {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.exit .my-button .btn-elem {
+  position: relative;
+  width: 32px;
+  height: 3px;
+  background: transparent;
+}
+.exit .my-button .btn-elem::before {
+  transform: rotate(45deg);
+  position: absolute;
+  content: "";
+  display: block;
+  width: 32px;
+  height: 3px;
+  top: 0;
+  background: #fff;
+}
+.exit .my-button .btn-elem::after {
+  transform: rotate(-45deg);
+  position: absolute;
+  content: "";
+  display: block;
+  width: 32px;
+  height: 3px;
+  top: 0;
+  background: #fff;
+}/*# sourceMappingURL=style.css.map */
