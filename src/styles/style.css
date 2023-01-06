@@ -246,7 +246,7 @@ main .container .main__img img {
 
 .about {
   background-image: linear-gradient(to right, #e13690, #f97e83);
-  padding: 70px 0px 40px;
+  padding: 70px 0px;
 }
 .about .about__h1 {
   font-size: 48px;
@@ -304,4 +304,82 @@ main .container .main__img img {
 .about .about__p a:hover {
   color: #f7859a;
   border-bottom: 1px solid #f7859a;
+}
+
+.ways {
+  background: black;
+  padding: 70px 0px;
+}
+.ways .container .ways__h1 {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+}
+.ways .container .ways__h1 span {
+  display: block;
+}
+.ways .container .items {
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+}
+.ways .container .items .item {
+  position: relative;
+  border-radius: 20px;
+  padding: 34px 22px;
+  height: 532px;
+  max-width: 350px;
+  width: 100%;
+  background: url(../images/palka.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.ways .container .items .item h1 {
+  font-size: 30px;
+}
+.ways .container .items .item .line {
+  width: 100%;
+  height: 1px;
+  background: black;
+  margin-top: 25px;
+}
+.ways .container .items .item p {
+  font-size: 16px;
+  line-height: 32px;
+  margin-top: 172px;
+  font-weight: 500;
+}
+.ways .container .items .item:nth-child(2) {
+  background: url(../images/palka1.jpg);
+}
+.ways .container .items .item:nth-child(3) {
+  background: url(../images/palka2.jpg);
+}
+.ways .container .ways__p {
+  font-size: 16px;
+  line-height: 21px;
+  color: #999999;
+  margin-top: 80px;
+  text-align: center;
+}
+.ways .container .ways__p a {
+  color: #999999;
+  border-bottom: 1px solid #999999;
+}
+.ways .container .ways__p a:hover {
+  color: white;
+  border-bottom: 1px solid #f7859a;
+}
+
+.right__button {
+  width: 35px;
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+}
+.right__button img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
