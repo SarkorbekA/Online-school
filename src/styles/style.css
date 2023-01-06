@@ -201,6 +201,10 @@ main .container {
   display: flex;
   justify-content: space-between;
   padding: 0px 30px;
+  gap: 15px;
+}
+main .container .main__box {
+  width: 40%;
 }
 main .container .main__box h1 {
   color: #e13690;
@@ -209,7 +213,6 @@ main .container .main__box h1 {
 main .container .main__box p {
   color: white;
   margin-top: 30px;
-  max-width: 520px;
   line-height: 1.8;
   font-size: 17px;
   font-style: normal;
@@ -222,11 +225,12 @@ main .container .main__box p a:hover {
   border-bottom: 1px solid #e13690;
 }
 main .container .main__box .main__btn {
-  margin: 42px auto 0 0;
+  margin: 35px auto 0 0;
 }
 main .container .main__img {
-  width: 500px;
-  height: 500px;
+  margin-top: 2%;
+  width: 490px;
+  height: 510px;
   border-radius: 50%;
   background-image: linear-gradient(to right, #f97e83, #e13690);
   display: flex;
@@ -236,7 +240,68 @@ main .container .main__img {
 }
 main .container .main__img img {
   position: absolute;
-  top: -57px;
-  width: 90%;
+  top: -66px;
+  width: 95%;
+}
+
+.about {
+  background-image: linear-gradient(to right, #e13690, #f97e83);
+  padding: 70px 0px 40px;
+}
+.about .about__h1 {
+  font-size: 48px;
+  text-align: center;
+  color: white;
+  line-height: 1.1;
+  font-weight: 600;
+}
+.about .about__h1 span {
   display: inline-block;
+}
+.about .about__items {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  gap: 20px;
+  justify-content: space-around;
+}
+.about .about__items .item {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 350px;
+}
+.about .about__items .item .item__head {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-weight: 600;
+}
+.about .about__items .item .item__head .item__num {
+  font-size: 60px;
+}
+.about .about__items .item .item__head .item__name {
+  font-size: 20px;
+}
+.about .about__items .item p {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 25px;
+}
+.about .about__p {
+  font-size: 18px;
+  line-height: 21px;
+  color: white;
+  margin-top: 80px;
+  text-align: center;
+}
+.about .about__p a {
+  color: white;
+  border-bottom: 1px solid white;
+}
+.about .about__p a:hover {
+  color: #f7859a;
+  border-bottom: 1px solid #f7859a;
 }/*# sourceMappingURL=style.css.map */
