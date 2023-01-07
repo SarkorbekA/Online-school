@@ -20,4 +20,3 @@ filter.addEventListener('click', () => {
     body.classList.remove('active')
     filter.classList.remove('active')
 })
-

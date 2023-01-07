@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online-school</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="src/styles/style.css">
 </head>
 
@@ -222,8 +221,79 @@
             </p>
         </div>
     </section>
+
+    <div class="info">
+        <div class="container">
+            <div class="info__box">
+                <div class="info__items">
+                    <div class="info__item">
+                        <div class="info__item-num">
+                            <div class="counter" data-to="50" data-stop="0">0</div>
+                            <div class="span">k</div>
+                        </div>
+                        <p>happy customers</p>
+                    </div>
+                    <div class="info__item">
+                        <div class="info__item-num">
+                            <div class="counter" data-to="60" data-stop="0">0</div>
+                            <div class="span">%</div>
+                        </div>
+                        <p>Sample Headline</p>
+                    </div>
+                </div>
+                <div class="info__items">
+                    <div class="info__item">
+                        <div class="info__item-num">
+                            <div class="counter" data-to="100" data-stop="0">0</div>
+                        </div>
+                        <p>our courses</p>
+                    </div>
+                    <div class="info__item">
+                        <div class="info__item-num">
+                            <div class="counter" data-to="1230" data-stop="0">0</div>
+                        </div>
+                        <p>learners worldwide</p>
+                    </div>
+                </div>
+            </div>
+            <div class="info__text">
+                <h1>The highest quality online courses from institutions</h1>
+                <p>Sample text. Click to select the Text Element.</p>
+                <div class="btn">learn more</div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 <script src="src/scripts/script.js"></script>
+<script>
+
+    (function () {
+        let counter = document.querySelectorAll('.counter');
+        let limit = 0;
+        window.addEventListener('scroll', function () {
+            if (limit == counter.length) { return; }
+            for (let i = 0; i < counter.length; i++) {
+                let pos = counter[i].getBoundingClientRect().top;
+                let win = window.innerHeight - 40;
+                if (pos < win && counter[i].dataset.stop === "0") {
+                    counter[i].dataset.stop = 1;
+                    let x = 0;
+                    limit++;
+                    let int = setInterval(function () {
+                        x = x + Math.ceil(counter[i].dataset.to / 50);
+                        counter[i].innerText = x;
+                        if (x > counter[i].dataset.to) {
+                            counter[i].innerText = counter[i].dataset.to;
+                            clearInterval(int);
+                        }
+                    }, 70);
+                }
+            }
+        });
+    })();
+
+</script>
 
 </html>
