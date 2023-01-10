@@ -181,6 +181,9 @@ nav .nav__ul.active {
   display: inline-block;
   border-radius: 30px;
   color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   letter-spacing: 1px;
   transition-duration: 0.5s;
   font-weight: 600;
@@ -204,31 +207,33 @@ main .container {
   padding: 0px 30px;
   gap: 15px;
 }
-main .container .main__box {
+
+.main__box {
   width: 40%;
 }
-main .container .main__box h1 {
+.main__box h1 {
   color: #e13690;
   font-size: 60px;
 }
-main .container .main__box p {
+.main__box p {
   color: white;
   margin-top: 30px;
   line-height: 1.8;
   font-size: 17px;
   font-style: normal;
 }
-main .container .main__box p a {
+.main__box p a {
   border-bottom: 1px solid white;
   color: white;
 }
-main .container .main__box p a:hover {
+.main__box p a:hover {
   border-bottom: 1px solid #e13690;
 }
-main .container .main__box .main__btn {
+.main__box .main__btn {
   margin: 35px auto 0 0;
 }
-main .container .main__img {
+
+.main__img {
   margin-top: 2%;
   width: 490px;
   height: 510px;
@@ -239,7 +244,7 @@ main .container .main__img {
   align-items: center;
   position: relative;
 }
-main .container .main__img img {
+.main__img img {
   position: absolute;
   top: -66px;
   width: 95%;
@@ -411,18 +416,19 @@ main .container .main__img img {
 .ways .container .items .item:nth-child(3) {
   background: url(../images/palka2.jpg);
 }
-.ways .container .ways__p {
+
+.ways__p {
   font-size: 16px;
   line-height: 21px;
   color: #999999;
   margin-top: 80px;
   text-align: center;
 }
-.ways .container .ways__p a {
+.ways__p a {
   color: #999999;
   border-bottom: 1px solid #999999;
 }
-.ways .container .ways__p a:hover {
+.ways__p a:hover {
   color: white;
   border-bottom: 1px solid #f7859a;
 }
@@ -454,7 +460,8 @@ main .container .main__img img {
     padding: 30px 10px;
   }
 }
-.school .container .school__box {
+
+.school__box {
   width: 100%;
   max-width: 460px;
   margin-bottom: 30px;
@@ -462,35 +469,36 @@ main .container .main__img img {
   flex-direction: column;
   gap: 25px;
 }
-.school .container .school__box h1 {
+.school__box h1 {
   color: #e13690;
   font-size: 48px;
   line-height: 50px;
 }
 @media (max-width: 576px) {
-  .school .container .school__box h1 {
+  .school__box h1 {
     font-size: 30px;
     text-align: center;
   }
 }
-.school .container .school__box p {
+.school__box p {
   font-size: 18px;
   line-height: 32px;
 }
 @media (max-width: 576px) {
-  .school .container .school__box p {
+  .school__box p {
     text-align: center;
   }
 }
-.school .container .school__box .school__link {
+
+.school__link {
   font-size: 16px;
   line-height: 21px;
 }
-.school .container .school__box .school__link a {
+.school__link a {
   color: #000;
   border-bottom: 1px solid #000;
 }
-.school .container .school__box .school__link a:hover {
+.school__link a:hover {
   border-bottom: 1px solid #f7859a;
 }
 
@@ -762,4 +770,76 @@ main .container .main__img img {
     padding: 10px 40px;
     font-size: 15px;
   }
+}
+
+.review {
+  background: url("//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/d4e43a5d768b508188b6b0e1/uyy.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.review .container {
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.review .container .btn:hover {
+  color: #fbacb1;
+}
+
+.review__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.review__box .review__box-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 31.6666666667%;
+  padding: 55px 30px 20px;
+  text-align: center;
+  background: white;
+  border-radius: 25px;
+  transition-duration: 0.5s;
+}
+@media (max-width: 992px) {
+  .review__box .review__box-item {
+    width: 46.5%;
+  }
+}
+@media (max-width: 576px) {
+  .review__box .review__box-item {
+    width: 80%;
+  }
+}
+@media (max-width: 400px) {
+  .review__box .review__box-item {
+    width: 95%;
+  }
+}
+.review__box .review__box-item p {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 28px;
+  color: #808080;
+  transition-duration: 0.5s;
+}
+.review__box .review__box-item h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #f97e83;
+}
+.review__box .review__box-item i {
+  font-size: 40px;
+  color: #f97e83;
+  transition-duration: 0.5s;
+}
+.review__box .review__box-item:hover {
+  transform: translateY(-7px);
 }/*# sourceMappingURL=style.css.map */
