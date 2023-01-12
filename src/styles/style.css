@@ -983,6 +983,10 @@ main .container {
   line-height: 32px;
 }
 
+form {
+  margin-top: 15px;
+}
+
 .form__button {
   font-weight: 700;
   display: inline-block;
