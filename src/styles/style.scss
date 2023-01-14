@@ -194,6 +194,7 @@ nav {
 }
 
 .btn:hover {
+    user-select: none;
     transform: translateY(-7px);
 }
 

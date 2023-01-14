@@ -194,6 +194,10 @@ nav .nav__ul.active {
 }
 
 .btn:hover {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   transform: translateY(-7px);
 }
 
